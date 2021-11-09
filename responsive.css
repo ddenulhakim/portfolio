@@ -1,0 +1,258 @@
+@media all and (max-width: 800px) {
+    .header .logo a {
+        padding: 15px 30px;
+    }
+    
+    .header .menu {
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+        padding: 0 40px 0 50px;
+      }
+
+    .header .container .menu-btn i{
+        display: block;
+        padding-right: 30px;
+        position: absolute;
+        right: 15px;
+        top: 5px;
+
+      }
+      #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+      }
+      .header .container ul{
+        position: fixed;
+        top:0px;
+        left: -100%;
+        background: #162B32;
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+      }
+      #click:checked ~ ul{
+        left: 0;
+        width: 50%;
+      }
+      .header .container ul li{
+        width: 100%;
+        padding: 40px 0;
+      }
+      .header .container ul li a{
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      #click:checked ~ ul li a{
+        margin-left: 0px;
+      }
+
+    .home .home-content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home .home-content h1 {
+        font-size: 120px;
+        padding-left:0;
+        padding-top: 150px;
+    }
+
+    .home .home-content span {
+        font-size: 120px;
+        padding-left:0;
+        padding-top: 150px;
+    }
+    
+    .menu-btn {
+        display: block;
+        padding: 15px 30px;
+    }
+
+    .about .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about .container .about-left {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .about .container .about-left h2 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 8px;
+
+    }
+
+    .about .container .about-left .text {
+        align-items: center;
+    }
+
+    .about .container .about-right {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .about .container .about-right .me {
+        width: 100%;
+    } 
+
+    .interest .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    
+    .interest .container .interest-left {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .interest .container .interest-left .liam {
+        width: 100%;
+        height: 100%;
+    }
+
+    .interest .container .interest-right {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .interest .container .interest-right h2 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+    .interest .container .interest-right .text {
+        align-items: center;
+    }
+
+    .education .education-content {
+        display: block;
+    }
+
+    .education .title {
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .contact .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contact .container .contact-left {
+        padding: 30px 60px;
+        width: 100%;
+    }
+
+    .contact .container .contact-left h2 {
+        font-size: 60px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .contact .container .contact-right {
+        width: 100%;
+        margin: 0 30px;
+    }
+
+    .contact .container .contact-right .text {
+        text-align: center;
+        padding-top: 0;
+    }
+
+}
+
+@media all and (max-width: 550px) {
+    .home .home-content h1 {
+        font-size: 80px;
+        padding-left:0;
+        padding-top: 150px;
+    }
+
+    .home .home-content span {
+        font-size: 80px;
+        padding-left:0;
+        padding-top: 150px;
+    }
+
+    .header .container ul { 
+        height: 70%;
+    }
+}
+
+@media all and (max-width: 370px) {
+    
+    .header .logo a {
+        padding: 15px 0;
+        align-items: center;
+    }
+
+    .home .home-content {
+        width: 100%;
+    }
+
+    .home .home-content h1 {
+        font-size: 50px;
+        padding-top: 650px;
+    }
+
+    .home .home-content span {
+        font-size: 50px;
+        padding-top: 650px;
+    }
+
+    header .container i {
+        align-items: center;
+    }
+
+    .header .container ul { 
+        height: 70%;
+    }
+
+    .home img {
+        position: absolute;
+        left: 50px;
+    }
+
+    .about .container .about-left .text {
+        font-size: 12px;
+    }
+
+    .interest .container .interest-right .text {
+        font-size: 12px;
+    }
+
+    .contact .container .contact-left h2 {
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+
+    .contact .container .contact-right .text {
+        font-size: 20px;
+    }
+
+
+    
+}
